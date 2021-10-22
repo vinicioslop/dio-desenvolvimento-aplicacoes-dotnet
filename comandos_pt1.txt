@@ -1,0 +1,7 @@
+Install-Package Microsoft.EntityFrameworkCore.SqlServer
+Install-Package Microsoft.EntityFrameworkCore.Tools
+
+Add-Migration InitialCreate
+Update-Database
+
+Add-Migration NOME_DA_TABELA
