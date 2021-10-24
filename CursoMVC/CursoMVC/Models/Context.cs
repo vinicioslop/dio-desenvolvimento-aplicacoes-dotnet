@@ -14,5 +14,10 @@ namespace CursoMVC.Models
         {
             optionsBuilder.UseSqlServer(connectionString:@"Server=localhost\SQLEXPRESS;Database=Cursomvc;Trusted_Connection=True;");
         }
+
+        public void SetModified(Object entity)
+        {
+            Entry(entity).State = EntityState.Modified;
+        }
     }
 }
